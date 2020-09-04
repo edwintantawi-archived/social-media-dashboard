@@ -42,8 +42,8 @@ header .heading-header p {
   color: #63687e;
 }
 
-header .heading-header .divider {
-  margin: 25px 0 15px;
+header .heading-header hr {
+  background-color: #333A56 !important;
 }
 
 header .toggle-theme {
@@ -275,6 +275,10 @@ footer .attribution {
 
 .dark header .heading-header p {
   color: #8b97c6;
+}
+
+.dark header .heading-header hr {
+  background-color: #E1E3F0 !important;
 }
 
 .dark header .toggle-theme span.theme-id {

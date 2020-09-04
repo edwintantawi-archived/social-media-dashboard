@@ -31,8 +31,8 @@ header {
 
     }
 
-    .divider {
-      margin: 25px 0 15px;
+    hr {
+      background-color: #333A56 !important;
     }
   }
 
@@ -304,6 +304,10 @@ footer {
 
       p {
         color: $text-dark;
+      }
+
+      hr {
+        background-color: #E1E3F0 !important;
       }
     }
 
