@@ -1,0 +1,15 @@
+* {
+  transition: background-color 1s;
+}
+
+html {
+  font-size: 100%;
+
+  body {
+    font-family: $fontFamily;
+  }
+}
+
+.off>.toggle-in {
+  transform: translateX(26px);
+}

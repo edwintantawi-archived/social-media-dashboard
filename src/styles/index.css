@@ -1,0 +1,334 @@
+* {
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+html {
+  font-size: 100%;
+}
+
+html body {
+  font-family: "Inter", sans-serif;
+}
+
+.off > .toggle-in {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+}
+
+.theme {
+  background-color: white;
+}
+
+header {
+  padding: 30px 0 35px;
+  height: 230px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: #f5f7ff;
+}
+
+header .heading-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+  color: black;
+}
+
+header .heading-header p {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin: 0;
+  color: #63687e;
+}
+
+header .heading-header .divider {
+  margin: 25px 0 15px;
+}
+
+header .toggle-theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .toggle-theme span.theme-id {
+  font-weight: 700;
+  font-size: 0.75rem;
+  margin-right: 18px;
+  color: #63687e;
+}
+
+header .toggle-theme span.toggle-wrap {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 55px;
+  height: 28px;
+  border-radius: 50px;
+  position: relative;
+  padding: 4px;
+  background-color: #aeb3cb;
+}
+
+header .toggle-theme span.toggle-wrap:hover {
+  cursor: pointer;
+}
+
+header .toggle-theme span.toggle-in {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background-color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header .toggle-theme span.toggle-dark {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+header .toggle-theme span.toggle-light {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media (min-width: 992px) {
+  header header {
+    padding: 30px 0 35px;
+    height: 210px;
+  }
+}
+
+main section {
+  margin-bottom: 30px;
+}
+
+main section .card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 28px 30px 20px;
+  margin-bottom: 18px;
+  background-color: #f0f2fa;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+main section .card:hover {
+  cursor: pointer;
+  background-color: #E1E3F0 !important;
+}
+
+main section .card .deco {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 5px;
+}
+
+main section .card .deco-fb {
+  background-color: #198ff5;
+}
+
+main section .card .deco-tw {
+  background-color: #1ca0f2;
+}
+
+main section .card .deco-ig {
+  background-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background-image: linear-gradient(to right, #fdc468, #df4996);
+}
+
+main section .card .deco-yt {
+  background-color: #c4032a;
+}
+
+main section .card .social-media {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main section .card .social-media p {
+  display: inline;
+  font-size: small;
+  margin-left: 3px;
+  color: #63687e;
+}
+
+main section .card .count {
+  text-align: center;
+}
+
+main section .card .count h1 {
+  font-size: 2.8125rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+  color: black;
+}
+
+main section .card .count p {
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  color: #63687e;
+}
+
+main section .card .grow {
+  color: #1db489;
+  font-size: 0.7rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+main section .card .grow.down {
+  color: #dc414c;
+}
+
+main section:first-child {
+  margin-top: -60px;
+}
+
+@media (min-width: 992px) {
+  main section:first-child {
+    margin-top: -95px;
+  }
+}
+
+main section.overview h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+main section.overview .card .event {
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section.overview .card .event p {
+  display: inline;
+  font-size: 0.75rem;
+  margin: auto 0;
+  color: #63687e;
+}
+
+main section.overview .card .changes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main section.overview .card .changes h2 {
+  display: inline;
+  margin: 0;
+}
+
+footer {
+  padding: 30px 0 20px;
+  color: black;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #2848c8;
+}
+
+.dark {
+  background-color: #1e202a;
+}
+
+.dark header {
+  background-color: #1f212e;
+}
+
+.dark header .heading-header h1 {
+  color: white;
+}
+
+.dark header .heading-header p {
+  color: #8b97c6;
+}
+
+.dark header .toggle-theme span.theme-id {
+  color: white;
+}
+
+.dark header .toggle-theme span.toggle-wrap {
+  background-image: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background-image: linear-gradient(to right, #378fe6, #3eda82);
+}
+
+.dark header .toggle-theme span.toggle-in {
+  background-color: #1f212e;
+}
+
+.dark main section .card {
+  background-color: #252a41;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark main section .card:hover {
+  background-color: #333A56 !important;
+}
+
+.dark main section .card .social-media p {
+  color: #8b97c6;
+}
+
+.dark main section .card .count {
+  text-align: center;
+}
+
+.dark main section .card .count h1 {
+  color: white;
+}
+
+.dark main section .card .count p {
+  color: #8b97c6;
+}
+
+.dark main section.overview h2 {
+  color: white;
+}
+
+.dark main section.overview .card .event p {
+  color: #8b97c6;
+}
+
+.dark footer {
+  color: white;
+}
+
+.dark footer .attribution a {
+  color: #afbef8;
+}
+/*# sourceMappingURL=index.css.map */
